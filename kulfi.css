@@ -1,0 +1,118 @@
+/*=================================code for all========================================*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*================================user defined font====================================*/
+@font-face{
+    font-family: "sanju";
+    src: url('../font/AlexBrush-Regular.ttf');
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Courier New', Courier, monospace, sanju;
+}
+/*=================================background section=====================================*/
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../image/bodyice2.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*================================logo and link======================================*/
+.row{
+    max-width: 1520px;
+    margin: 0px auto:
+}
+.clearfix:after{
+    content: "sanjeet";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+/*=================================only logo========================================*/
+.logo{
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+/*=================================only link========================================*/
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 90%;
+    font-weight: 100px;
+    padding-bottom: 4px;
+}
+.main-nav li a:hover{
+    color: hotpink;
+    border-bottom: 2px solid hotpink;
+}
+/*====================================body content=====================================*/
+.main-content{
+    width: 1500px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+h1{
+    font-size: 240%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.animate{
+    animation: sanju 1s infinite;
+}
+@keyframes sanju{
+    0%{color:blue}
+    25%{color:green}
+    50%{color:red}
+    100%{color:hotpink}
+    
+}
+/*==============================both button===========================================*/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius:180px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color:black;
+    color: rgb(241, 8, 125);
+    border: 1px solid rgb(241, 8, 125);
+}
+.btn:hover{
+    background-color: darkslategrey;
+    color: white;
+}
+.btn:active{
+    color: rgb(248, 6, 127);
+    background-color: silver;
+}
+/*===============================media query=========================================*/
+@media only screen and (max-width: 1500px){
+    
+}
